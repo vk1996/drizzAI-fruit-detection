@@ -28,12 +28,13 @@ python3 datagen.py
 python3 yolo2json.py -p train --output train.json
 ```
 
-### Training ###
+### Training and model export ###
 
 #### Place train-valid folder & json in a folder called datasets and train #### 
 
 ```commandline
 python3 train.py -f exps/default/yolox_nano.py -d 1 -b 8 --fp16
+python export_onnx.py -f exps/default/yolox_nano.py -c YOLOX_outputs/yolox_nano/trained_ckpt.pth  --output-name YOLOX_outputs/yolox_nano/fruit-detection.onnx
 ```
 
 ### Testing ###
