@@ -10,7 +10,6 @@ ninja
 tabulate
 psutil
 tensorboard
-albumentations==1.4.10
 albucore==0.0.13
 
 # verified versions
