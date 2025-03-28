@@ -35,7 +35,7 @@ def get_response(input_img,confidence_threshold,iou_threshold):
 if __name__ == "__main__":
 
 
-    detector=YOLOX_ONNX('models/fruit-detection-epoch115.onnx')
+    detector=YOLOX_ONNX('models/fruit-detection-epoch120.onnx')
     iface = gr.Interface(
         cache_examples=False,
         fn=get_response,

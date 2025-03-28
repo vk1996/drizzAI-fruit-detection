@@ -162,7 +162,7 @@ if __name__=="__main__":
     from matplotlib import pyplot as plt
     from glob import glob
     paths=sorted(glob('test-images/*'))
-    yolox_nano_onnx = YOLOX_ONNX('models/fruit-detection-epoch115.onnx')
+    yolox_nano_onnx = YOLOX_ONNX('models/fruit-detection-epoch120.onnx')
     for i,path in enumerate(paths):
         #path='/home/vk/personal/drezz-ai-fruits/fruits/test/test2.png'
         start_time = time()
