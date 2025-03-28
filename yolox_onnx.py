@@ -161,7 +161,7 @@ class YOLOX_ONNX:
 if __name__=="__main__":
     from matplotlib import pyplot as plt
     from glob import glob
-    paths=sorted(glob('/home/vk/personal/drezz-ai-fruits/fruits/test/*'))
+    paths=sorted(glob('test-images/*'))
     yolox_nano_onnx = YOLOX_ONNX('models/fruit-detection-epoch115.onnx')
     for i,path in enumerate(paths):
         #path='/home/vk/personal/drezz-ai-fruits/fruits/test/test2.png'
@@ -172,6 +172,6 @@ if __name__=="__main__":
         #plt.figure(figsize=(7,15))
         #plt.imshow(yolox_nano_onnx.output_img)
         #plt.imshow(cv2.cvtColor(yolox_nano_onnx.output_img,cv2.COLOR_BGR2RGB))
-        cv2.imwrite(f"/home/vk/personal/drezz-ai-fruits/fruits-detector/drizzAI-fruit-detection/outputs/output_{i}.jpg",yolox_nano_onnx.output_img)
+        cv2.imwrite(f"outputs/output_{i}.jpg",yolox_nano_onnx.output_img)
         plt.show()
         #break
