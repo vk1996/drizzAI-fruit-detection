@@ -21,7 +21,7 @@ python3 app.py
 ```commandline
 cd tools
 python3 datagen.py
-python3 yolo2json.py
+python3 yolo2json.py -p train --output train.json
 ```
 
 ### Training ###
